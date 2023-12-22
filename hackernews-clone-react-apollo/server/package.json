@@ -2,12 +2,19 @@
   "name": "apollo",
   "version": "1.0.0",
   "description": "apollo client for graphql",
-  "main": "index.js",
   "author": "mario laiseca-ruiz",
+  "type": "module",
+  "scripts": {
+    "compile": "tsc",
+    "start": "yarn run compile && node ./dist/index.js"
+  },
   "license": "MIT",
   "dependencies": {
     "@apollo/client": "^3.8.8",
     "@types/node": "^20.10.5",
     "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
   }
 }
